@@ -102,3 +102,30 @@ let color2: Colors2 = Colors2.Blue;
 
 console.log(color2);
 
+/* Any */
+let data: any;
+data = 5;
+console.log(data);
+
+data = "Hello";
+console.log(data);
+
+data = true;
+console.log(data);
+
+function logData(data: any) {
+  console.log(data);
+}
+
+logData(12);
+logData("TypeScript");
+logData([1, 2, 3]);
+
+let man: any = { name: "Levent", age: 30 };
+
+console.log(man.name, man.age);
+
+let data2: any = { name: "Teoman", skills: ["Typescript", "Javascript"], experience:5 };
+
+console.log(data2.skills[1]);
+

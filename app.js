@@ -71,3 +71,21 @@ var Colors2;
 })(Colors2 || (Colors2 = {}));
 var color2 = Colors2.Blue;
 console.log(color2);
+/* Any */
+var data;
+data = 5;
+console.log(data);
+data = "Hello";
+console.log(data);
+data = true;
+console.log(data);
+function logData(data) {
+    console.log(data);
+}
+logData(12);
+logData("TypeScript");
+logData([1, 2, 3]);
+var man = { name: "Levent", age: 30 };
+console.log(man.name, man.age);
+var data2 = { name: "Teoman", skills: ["Typescript", "Javascript"], experience: 5 };
+console.log(data2.skills[1]);
