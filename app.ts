@@ -54,3 +54,28 @@ const person2 = {
 for (const hobby of person2.hobies) {
   console.log(hobby);
 }
+
+/* Tuples type  sabit uzunluqlu və tipi əvvəlcədən müyyən olunmuş array*/
+
+let person3: [string, number];
+person3 = ["Levent", 30];
+
+console.log(person3);
+
+let mixed: [string, number, boolean];
+
+mixed = ["Hello", 20, true];
+mixed.forEach((m) => console.log(m));
+
+function getUser(): [string, number] {
+  return ["Teoman", 10];
+}
+
+let user = getUser();
+console.log(user);
+
+let product: [string, number?];
+product = ["Hello"];
+console.log(product);
+product = ["Java", 20];
+console.log(product);

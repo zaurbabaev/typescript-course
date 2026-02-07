@@ -37,3 +37,20 @@ for (var _i = 0, _a = person2.hobies; _i < _a.length; _i++) {
     var hobby = _a[_i];
     console.log(hobby);
 }
+/* Tuples type  sabit uzunluqlu və tipi əvvəlcədən müyyən olunmuş array*/
+var person3;
+person3 = ["Levent", 30];
+console.log(person3);
+var mixed;
+mixed = ["Hello", 20, true];
+mixed.forEach(function (m) { return console.log(m); });
+function getUser() {
+    return ["Teoman", 10];
+}
+var user = getUser();
+console.log(user);
+var product;
+product = ["Hello"];
+console.log(product);
+product = ["Java", 20];
+console.log(product);
