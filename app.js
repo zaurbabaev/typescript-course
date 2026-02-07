@@ -4,9 +4,26 @@ console.log("Kodlama davam ediyor");
 
  */
 function add(n1, n2) {
+    /* if (typeof n1 !== "number" || typeof n2 !== "number") {
+      throw new Error("Incorrect Input!");
+    } */
     return n1 + n2;
 }
-var number1 = 4;
+var number1 = 4.5;
 var number2 = 5.2;
 var result = add(number1, number2);
 console.log(result);
+/* ---------------Object------------------- */
+var person = {
+    name: "Teoman",
+    age: 2,
+};
+var ali = {
+    name: "Ali",
+    age: 20,
+    birthday: new Date("2000-02-02"),
+};
+console.log(ali.name);
+console.log(ali.birthday);
+console.log(ali.age);
+console.log(ali);
