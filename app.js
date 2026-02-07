@@ -54,3 +54,20 @@ product = ["Hello"];
 console.log(product);
 product = ["Java", 20];
 console.log(product);
+/* Enum */
+var Colors;
+(function (Colors) {
+    Colors[Colors["Red"] = 0] = "Red";
+    Colors[Colors["Green"] = 1] = "Green";
+    Colors[Colors["Blue"] = 2] = "Blue";
+})(Colors || (Colors = {}));
+var color = Colors.Blue;
+console.log(color); //2
+var Colors2;
+(function (Colors2) {
+    Colors2["Red"] = "RED";
+    Colors2["Green"] = "GREEN";
+    Colors2["Blue"] = "BLUE";
+})(Colors2 || (Colors2 = {}));
+var color2 = Colors2.Blue;
+console.log(color2);

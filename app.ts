@@ -79,3 +79,26 @@ product = ["Hello"];
 console.log(product);
 product = ["Java", 20];
 console.log(product);
+
+/* Enum */
+
+enum Colors {
+  Red,
+  Green,
+  Blue,
+}
+
+let color: Colors = Colors.Blue;
+
+console.log(color); //2
+
+enum Colors2 {
+  Red = "RED",
+  Green = "GREEN",
+  Blue = "BLUE",
+}
+
+let color2: Colors2 = Colors2.Blue;
+
+console.log(color2);
+
