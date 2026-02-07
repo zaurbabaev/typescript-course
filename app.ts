@@ -43,4 +43,14 @@ console.log(ali.age);
 
 console.log(ali);
 
+/* Arrays */
 
+const person2 = {
+  name: "Teoman",
+  age: 2,
+  hobies: ["Movies", "Sports", "Musics"],
+};
+
+for (const hobby of person2.hobies) {
+  console.log(hobby);
+}

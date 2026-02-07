@@ -27,3 +27,13 @@ console.log(ali.name);
 console.log(ali.birthday);
 console.log(ali.age);
 console.log(ali);
+/* Arrays */
+var person2 = {
+    name: "Teoman",
+    age: 2,
+    hobies: ["Movies", "Sports", "Musics"],
+};
+for (var _i = 0, _a = person2.hobies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby);
+}
