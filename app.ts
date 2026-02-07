@@ -125,7 +125,26 @@ let man: any = { name: "Levent", age: 30 };
 
 console.log(man.name, man.age);
 
-let data2: any = { name: "Teoman", skills: ["Typescript", "Javascript"], experience:5 };
+let data2: any = {
+  name: "Teoman",
+  skills: ["Typescript", "Javascript"],
+  experience: 5,
+};
 
 console.log(data2.skills[1]);
 
+/* unknown */
+
+let datas: unknown;
+
+// datas = 12;
+// datas = true;
+datas = "Hello";
+
+if (typeof datas === "number") {
+  console.log("Number");
+} else if (typeof datas === "string") {
+  console.log(datas.toUpperCase());
+} else if (typeof datas === "boolean") {
+  console.log("Boolean");
+}

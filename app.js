@@ -87,5 +87,23 @@ logData("TypeScript");
 logData([1, 2, 3]);
 var man = { name: "Levent", age: 30 };
 console.log(man.name, man.age);
-var data2 = { name: "Teoman", skills: ["Typescript", "Javascript"], experience: 5 };
+var data2 = {
+    name: "Teoman",
+    skills: ["Typescript", "Javascript"],
+    experience: 5,
+};
 console.log(data2.skills[1]);
+/* unknown */
+var datas;
+// datas = 12;
+// datas = true;
+datas = "Hello";
+if (typeof datas === "number") {
+    console.log("Number");
+}
+else if (typeof datas === "string") {
+    console.log(datas.toUpperCase());
+}
+else if (typeof datas === "boolean") {
+    console.log("Boolean");
+}
